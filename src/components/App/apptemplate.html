@@ -6,16 +6,29 @@
   <router-view></router-view>uses this as a container for rendering different components tied to different routes 
 </div>-->
 <b-container fluid>
+
+	<b-row align-v="center" id="header">
+		<b-container>
+				<b-row align-v="center">
+					<b-col><b-img fluid :src="require('../../assets/intel-logo-white-100.png')" alt="Intel Logo" /></b-col>
+
+					<b-col cols="6" class="text-center"><h1>Hardware Info Tool</h1></b-col>
+
+					<b-col>
+						<b-input-group horizontal>
+							<b-form-input placeholder="I don't work yet"/>
+							<!--button--> 
+							<b-input-group-button slot="right">
+								<b-btn>Search</b-btn>
+							</b-input-group-button>
+						</b-input-group>
+					</b-col>
+				</b-row>			
+		</b-container>
+	</b-row>
+
+	<!--App entry--> 
 	<b-container id="app">
-		<b-row align-v="center" id="header">
-			<b-col align="start">logo?</b-col>
-			<b-col align="center"><h1>APP COMPONENT</h1></b-col>
-			<b-col align="end">
-				<b-form-fieldset horizontal label="Search">
-					<b-form-input placeholder="I don't work yet"/>
-				</b-form-fieldset>
-			</b-col>
-		</b-row>
 		<b-row>
 			<router-view></router-view>
 		</b-row>

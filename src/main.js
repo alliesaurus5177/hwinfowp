@@ -6,6 +6,7 @@ import BoostrapVue from 'bootstrap-vue'
 import App from './components/App/App.vue' //moving this into components so I can do three-file setup 
 import router from './router'
 
+import 'babel-polyfill'
 import 'bootstrap-vue/dist/bootstrap-vue.css'
 import 'bootstrap/dist/css/bootstrap.css'
 
