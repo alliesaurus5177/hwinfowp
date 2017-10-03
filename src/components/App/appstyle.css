@@ -6,3 +6,10 @@
   color: #2c3e50;
   margin-top: 60px;
 }*/
+#app{
+	border: 5px solid rgb(22, 22, 22);
+}
+#header{
+	background-color: #ccc;
+	border: 3px solid rgb(227, 45, 90);
+}

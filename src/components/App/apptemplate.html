@@ -1,6 +1,23 @@
-<div id="app">
-  <!--Adding in About --> 
-  <router-link :to="{name: 'Hello'}">Home</router-link> <!--using named route-->
-  <router-link to="/about">About</router-link><!-- std route, uses path-->
-  <router-view></router-view> <!--uses this as a container for rendering different components tied to different routes --> 
-</div>
+<!--<div id="app"> Hi I'm persistent styling. Wrapper
+	<h1>APP COMPONENT</h1>
+  Adding in About 
+  <router-link :to="{name: 'Hello'}">Home</router-link> using named route
+  <router-link to="/about">About</router-link> std route, uses path
+  <router-view></router-view>uses this as a container for rendering different components tied to different routes 
+</div>-->
+<b-container fluid>
+	<b-container id="app">
+		<b-row align-v="center" id="header">
+			<b-col align="start">logo?</b-col>
+			<b-col align="center"><h1>APP COMPONENT</h1></b-col>
+			<b-col align="end">
+				<b-form-fieldset horizontal label="Search">
+					<b-form-input placeholder="I don't work yet"/>
+				</b-form-fieldset>
+			</b-col>
+		</b-row>
+		<b-row>
+			<router-view></router-view>
+		</b-row>
+	</b-container>	
+</b-container fluid>
