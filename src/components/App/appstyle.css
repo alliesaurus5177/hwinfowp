@@ -1,11 +1,17 @@
-.container-fluid{
+container-fluid{
 	background-color: rgb(221, 189, 255);
 	border: 3px solid rgb(0, 0, 153);
 }
-#app{
+#app-content{
 	border: 5px solid rgb(22, 22, 22);
 }
 #header{
 	background-color: rgb(0, 112, 197);
 	min-height: 120px;
+	border: 3px solid rgb(0, 0, 153);
+}
+
+#footer{
+	background-color: rgb(0, 112, 197);
+	border: 3px solid black;
 }

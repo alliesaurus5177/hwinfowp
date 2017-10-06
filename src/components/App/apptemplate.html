@@ -5,32 +5,43 @@
   <router-link to="/about">About</router-link> std route, uses path
   <router-view></router-view>uses this as a container for rendering different components tied to different routes 
 </div>-->
-<b-container fluid>
+<b-container fluid id="app-content">
+	<header>
+		<b-row align-v="center" id="header">
+			<b-container>
+					<b-row align-v="center">
+						<b-col><b-img fluid :src="require('../../assets/intel-logo-white-100.png')" alt="Intel Logo" /></b-col>
 
-	<b-row align-v="center" id="header">
-		<b-container>
-				<b-row align-v="center">
-					<b-col><b-img fluid :src="require('../../assets/intel-logo-white-100.png')" alt="Intel Logo" /></b-col>
+						<b-col cols="6" class="text-center"><h1>Hardware Info Tool</h1></b-col>
 
-					<b-col cols="6" class="text-center"><h1>Hardware Info Tool</h1></b-col>
+						<b-col>
+							<b-input-group horizontal>
+								<b-form-input placeholder="I don't work yet"/>
+								<!--button--> 
+								<b-input-group-button slot="right">
+									<b-btn>Search</b-btn>
+								</b-input-group-button>
+							</b-input-group>
+						</b-col>
+					</b-row>			
+			</b-container>
+		</b-row>
+	</header>
 
-					<b-col>
-						<b-input-group horizontal>
-							<b-form-input placeholder="I don't work yet"/>
-							<!--button--> 
-							<b-input-group-button slot="right">
-								<b-btn>Search</b-btn>
-							</b-input-group-button>
-						</b-input-group>
-					</b-col>
-				</b-row>			
-		</b-container>
-	</b-row>
-
-	<!--App entry--> 
-	<b-container id="app">
+	<!--App child component entry--> 
+	<b-container id="app-content">
 		<b-row>
 			<router-view></router-view>
 		</b-row>
 	</b-container>	
+
+	<footer>
+		<b-row align-v="center" id="footer">
+				<b-container>
+					<b-row>
+						<b-col>Hi, I'm the footer</b-col>
+					</b-row>
+				</b-container>
+		</b-row>
+	</footer>
 </b-container fluid>
